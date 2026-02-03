@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Goodly';
+    src: url(../fonts/goodly-font.zip);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    background: #000;
+}
+
+.container {
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    font-family: 'Poppins';
+}
+
+/* CSS for header */
+.columns_wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab_wrapper {
+    padding: 73px 0 0 0;
+}
+
+.apple_header {
+    background: linear-gradient(rgb(214 198 198 / 50%), rgb(255 253 253 / 70%));
+    padding: 15px 0 15px 0;
+}
+
+.logo_wrapper i {
+    color: #000000;
+}
+
+.containerh {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.icons_wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.icons_wrapper a {
+    color: #000000;
+}
+
+.apple_bar ul a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.apple_bar ul {
+    gap: 20px;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+/* CSS for mobile */
+@media screen and (max-width:767px) {
+    .apple_bar ul{
+    flex-wrap: wrap;
+}
+    
+}
+/* CSS for hero banner */
+.apple_banner {
+    background: url(../img/HBI_$.jpg), no-repeat, center center;
+    background-size: cover;
+    padding: 393px 0 71px 0;
+}
+
+.hero_heading h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.hero_heading p {
+    color: #fff;
+}
+
+.tab_wrapper {
+    justify-content: end;
+}
+
+.tab_wrapper p {
+    color: #fff;
+}
+
+.tab_wrapper a {
+    color: #fff;
+    background: #0076DF;
+    padding: 9px 15px 9px 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab_wrapper a:hover {
+    color: #fff;
+}
+
+.fa-brands {
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    display: flex !important;
+    align-items: center;
+}
+
+.tabe_wrapper p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.tabe_wrapper {
+    gap: 20px;
+}
+
+.tabe_wrapper {
+    background: #26222257;
+    padding: 10px 14px 10px 19px;
+    border-radius: 37px;
+}
+/* CSS for mobile */
+@media screen and (max-width:767px) {
+    .cart_wrapper{
+    flex-wrap: wrap;
+}
+.tabe_wrapper{
+    flex-wrap: wrap;
+}
+.content_wrapper{
+    justify-content: center;
+}
+.hero_heading p{
+    font-size: 35px !important;
+}
+.content_wrapper{
+    flex-wrap: wrap;
+}
+}
+
+/* CSS for VT section */
+.vt_special {
+    background: url(../img/VT_special.png);
+    padding: 26px 0 485px 0;
+    background-position: center;
+    background-size: cover;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.vt_content_wrapper {
+    text-align: center;
+}
+
+.vt_content_wrapper a {
+    background: #0d6efd;
+    color: #fff;
+    padding: 11px 16px 10px 16px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.vt_content_wrapper h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Poppins';
+}
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	40% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	50% {
+		transform: scale3d(0.85, 1.15, 1);
+	}
+
+	65% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	75% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/* @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+} */
+
+/* CSS for hello section */
+.hbtn_wrapper {
+    max-width: 271px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lm_btn {
+    background: #0076DF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 12px 10px 12px;
+    border-radius: 24px;
+}
+
+.lm_btn:hover {
+    color: #fff;
+}
+
+.hello_content {
+    text-align: center;
+}
+
+.si_btn {
+    border: 1px solid #0d6efd;
+    padding: 9px 14px 9px 14px;
+    border-radius: 25px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.si_btn:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.hello_section {
+    background: url(../img/iphone.png) center center no-repeat;
+    background-size: cover;
+    padding: 23px 0 579px 0;
+}
+
+.hello_content h2 {
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* CSS for cart section */
+.cc_wrapper {
+    background: url(../img/cart_imges\ \(1\).jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 12px 0 417px 0;
+    text-align: center;
+}
+
+.cart_btn_2 {
+    max-width: 213px !important;
+}
+
+.btn_lm {
+    font-size: 14px !important;
+}
+
+.container1 {
+    max-width: 1245px;
+    margin: 0 auto;
+}
+
+.cc_wrapper h2 {
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.cc_wrapper span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #0076DF;
+}
+
+.cart_wrapper {
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-bottom: 10px;
+}
+
+.wrapper_1 {
+    background: url(../img/cart_imges\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper_2 {
+    background: url(../img/cart_imges\ \(4\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper_3 {
+    background: url(../img/cart_imges\ \(5\).jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.wrapper_5 {
+    background: url(../img/cart_imges\ \(6\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cart_sections {
+    padding: 10px 0 0 0;
+}
+
+.slider_cart {
+    background: url(../img/slider-img\ \(6\).jpg);
+    padding: 231px 10px 25px 10px;
+    background-position: center;
+}
+
+.slider_cart a {
+    background: #fff;
+    color: #000000;
+    padding: 11px 19px 10px 20px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 42px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.slider_cart a:hover {
+    color: #000000;
+}
+
+.slider_cart h4 {
+    color: #6d6161;
+    margin: 8px 0 0 0;
+}
+
+.slider_cart span {
+    font-weight: 700;
+}
+
+.slider_cart {
+    gap: 20px;
+}
+
+.slider_wrapper h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.sbw_wrapper {
+    background: url(../img/imgi_264_376x508sr.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 230px 0 30px 0;
+    text-align: center;
+}
+
+.sbw_wrapper a {
+    background: #fff;
+    color: #000000;
+    padding: 11px 19px 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 42px;
+    transition: ease all 0.5s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.sbw_wrapper a:hover {
+    color: #000000;
+    background: #e6dfdf;
+}
+
+.slider_below_wrapper {
+    gap: 10px;
+    padding: 10px 0 40px 0;
+}
+
+.sbw_wrapper p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.apple_slider {
+    padding: 43px 0 12px 0;
+}
+
+.slider_wrapper {
+    padding: 30px 0 0 0;
+}
+
+.fc_heading {
+    font-size: 18px;
+}
+
+.fclist_wrapper ul a {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.fc_wrapper {
+    gap: 80px;
+}
+
+.apple_footer {
+    padding: 21px 0 10px 0;
+}
+@media screen and (max-width:767px) {
+    .fc_wrapper{
+        flex-wrap: wrap;
+    }
+    .slider_below_wrapper{
+        flex-wrap: wrap;
+    }
+}
